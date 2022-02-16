@@ -8,7 +8,7 @@ patchesStrategicMerge:
 namespace: instavote
 images:
 - name: dockeridjz/vote
-  newTag: main-15b60b54-1644973989 # {"$imagepolicy": "flux-system:vote:tag"}
+  newTag: main-15b60b54-1644973989 # {"$imagepolicy": "instavote:vote:tag"}
 replicas:
 - name: vote
   count: 4
