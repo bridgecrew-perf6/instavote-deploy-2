@@ -5,7 +5,7 @@ metadata:
   annotations:
     reconcile.fluxcd.io/requestedAt: "2022-02-16T03:25:30.616002995Z"
   name: result
-  namespace: flux-system
+  namespace: instavote
 spec:
   git:
     checkout:
