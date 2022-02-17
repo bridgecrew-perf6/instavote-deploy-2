@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
 - ../base
 patchesStrategicMerge:
+- canary.yaml
 - deployment.yaml
 namespace: instavote
 images:
