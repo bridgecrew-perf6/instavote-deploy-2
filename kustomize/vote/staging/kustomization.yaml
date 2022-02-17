@@ -4,21 +4,15 @@ resources:
 - ../base
 patchesStrategicMerge:
 - deployment.yaml
-- service.yaml
 namespace: instavote
 images:
 - name: dockeridjz/vote
   newTag: main-59050f61-1645018960 # {"$imagepolicy": "instavote:vote:tag"}
 replicas:
 - name: vote
-  count: 4
+  count: 0
 commonLabels:
   project: instavote
   env: staging
 commonAnnotations:
   supported-by: "sre@example.com"
-configMapGenerator:
-- name: vote
-  literals:
-  - OPTION_A=STAGING-v1
-  - OPTION_B=DEV-v1
