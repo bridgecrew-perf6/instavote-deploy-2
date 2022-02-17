@@ -11,7 +11,8 @@ metadata:
 spec:
   rules:
   - host: vote.example.com
-    http: paths:
+    http:
+      paths:
       - path: /
         pathType: Prefix
         backend:
