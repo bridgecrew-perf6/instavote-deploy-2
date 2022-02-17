@@ -19,5 +19,5 @@ spec:
           service:
             name: vote
             port:
-number: 80
+              number: 80
 
